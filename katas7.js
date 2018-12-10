@@ -1,10 +1,10 @@
-function forEach(array, callback) {
+function newForEach(array, callback) {
     for(let index = 0; index < array.length; index++) {
         callback(array[index])
     }
 }
 
-function map(array, callback) {
+function newMap(array, callback) {
     let result = []
     for(let index = 0; index < array.length; index++) {
         result.push(callback(array[index]))
@@ -12,7 +12,7 @@ function map(array, callback) {
     return result;
 }
 
-function some(array, callback) {
+function newSome(array, callback) {
     let result = false;
     for(let index = 0; index < array.length; index++) {
         if(callback(array[index]) === true) {
@@ -22,7 +22,7 @@ function some(array, callback) {
     return result;
 }
 
-function find(array, callback) {
+function newFind(array, callback) {
     for(let index = 0; index < array.length; index++) {
         if(callback(array[index]) === true) {
             return array[index]
@@ -30,7 +30,7 @@ function find(array, callback) {
     }
 }
 
-function findIndex(array, callback) {
+function newFindIndex(array, callback) {
     for(let index = 0; index < array.length; index++) {
         if(callback(array[index]) === true) {
             return index;
@@ -39,7 +39,7 @@ function findIndex(array, callback) {
     return -1;
 }
 
-function every(array, callback) {
+function newEvery(array, callback) {
     let result = true;
     for(let index = 0; index < array.length; index++) {
         if(callback(array[index]) === false) {
@@ -49,7 +49,7 @@ function every(array, callback) {
     return result;
 }
 
-function filter(array, callback) {
+function newFilter(array, callback) {
     let result = []
     for(let index = 0; index < array.length; index++) {
         if (callback(array[index]) === true) {
@@ -59,4 +59,4 @@ function filter(array, callback) {
     return result;
 }
 
-module.exports = { forEach, map, some, find, findIndex, every, filter } 
+ 

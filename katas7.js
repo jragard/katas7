@@ -49,14 +49,14 @@ function newEvery(array, callback) {
     return result;
 }
 
-function newFilter(array, callback) {
-    let result = []
-    for(let index = 0; index < array.length; index++) {
-        if (callback(array[index]) === true) {
-            result.push(array[index])
-        }
-    }
-    return result;
-}
+// function newFilter(array, callback) {
+//     let result = []
+//     for(let index = 0; index < array.length; index++) {
+//         if (callback(array[index]) === true) {
+//             result.push(array[index])
+//         }
+//     }
+//     return result;
+// }
 
  
